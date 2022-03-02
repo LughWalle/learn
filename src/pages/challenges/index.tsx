@@ -13,7 +13,7 @@ export default function Challenges() {
         </h1>
         {
           challenges.map((challenge) => (
-            <Card {...challenge} />
+            <Card key={challenge.id} {...challenge} />
           ))
         }
       </main>
