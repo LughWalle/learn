@@ -1,0 +1,13 @@
+.card {
+    box-shadow: 3px 3px 20px #000000a1;
+    width: 385px;
+    background-color: #8c35ff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 17px;
+}
+
+.center_text {
+    text-align: center;
+}
