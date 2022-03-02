@@ -5,6 +5,7 @@
       "_components/*": ["components/*"],
       "_shared/*": ["shared/*"],
       "_assets/*": ["assets/*"],
+      "_data/*": ["data/*"],
     },
     "target": "es5",
     "lib": [

@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Sigla",
+    "level": "L",
+    "description": "Escreva uma função que recebe uma frase (string) como parametro, extraia os primeiros caracteres de cada palavra, retorna uma sigla como resultado!",
+    "example": {
+      "input": "Meu desafio dev",
+      "output": "MDD"
+    },
+    "tip": "Sem dicas"
+  },
+  {
+    "id": 2,
+    "title": "Por-extenso",
+    "level": "C",
+    "description": "Criar um algoritmo que ao receber um valor retorna uma String com ele por extenso.",
+    "example": {
+      "input": "25",
+      "output": "Vinte e cinco"
+    },
+    "tip": "Sem dicas"
+  },
+  {
+    "id": 3,
+    "title": "Daqui á...",
+    "level": "L",
+    "description": "Crie uma função recebe dois paramentro, diaDaSemana e quantidadeDeDias. Ela deve contar os dias apartir do primeiro paramentro ate a quantidade recebida no segundo parametro, o retorno deve ser o dia correspondente ao final da contagem",
+    "example": {
+      "input": "parametro 1: Terça, parametro 2: 5",
+      "output": "Domingo"
+    },
+    "tip": "Para os dias da semana use: const diasSemana = ['Segunda', 'Terca', 'Quarta', 'Quinta', 'Sexta', 'Sabado', 'Domingo'];"
+  }
+]
