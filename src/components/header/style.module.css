@@ -1,0 +1,14 @@
+.container {
+  margin: auto;
+
+  height: 100%;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  padding: 15px;
+  padding-inline: 15%;
+  box-shadow: 0 -11px 20px black;
+}
+.logo {
+  width: 150px;
+}
