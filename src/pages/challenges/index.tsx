@@ -9,13 +9,17 @@ export default function Challenges() {
     <Layout headTitle='Challenges' >
       <main className={styles.main}>
         <h1 className={'title'}>
-            Challenges
+          Challenges
         </h1>
-        {
-          challenges.map((challenge) => (
-            <Card key={challenge.id} {...challenge} />
-          ))
-        }
+        <ul className={styles.list}>
+          {
+            challenges.map((challenge) => (
+              <li key={challenge.id}>
+                <Card {...challenge} />
+              </li>
+            ))
+          }
+        </ul>
       </main>
     </Layout>
   )

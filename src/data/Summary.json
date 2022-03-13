@@ -1,0 +1,179 @@
+[
+    {
+        "Operadores": {
+            "atribuição": {
+                "equal": {
+                    "item": "=",
+                    "name": "atribuição",
+                    "description": "atribui uma informação em uma variavel"
+                },
+                "plusEqual": {
+                    "item": "+=",
+                    "name": "concatenação ou adição",
+                    "description": "concatena uma segunga informação na outra, caso sejam numeros, soma os valores"
+                },
+                "minusEqual": {
+                    "item": "-=",
+                    "name": "concatenação ou adição",
+                    "description": "concatena uma segunga informação na outra, caso sejam numeros, soma os valores"
+                }
+            },
+            "aritmeticos": {
+                "plus": {
+                    "item": "+",
+                    "name": "mais"
+                },
+                "minus": {
+                    "item": "-",
+                    "name": "menos"
+                },
+                "asterisk": {
+                    "item": "*",
+                    "name": "multiplicação"
+                },
+                "division": {
+                    "item": "/",
+                    "name": "divisão"
+                },
+                "remainder": {
+                    "item": "%",
+                    "name": "restante"
+                }
+            },
+            "comparação": {
+                "equal": {
+                    "item": "===",
+                    "name": "igual"
+                },
+                "notEqual": {
+                    "item": "!==",
+                    "name": "diferente"
+                },
+                "greaterThan": {
+                    "item": ">",
+                    "name": "maior que"
+                },
+                "lessThan": {
+                    "item": "<",
+                    "name": "menor que"
+                },
+                "greaterEqual": {
+                    "item": ">=",
+                    "name": "maior igual"
+                },
+                "lessEqual": {
+                    "item": "<=",
+                    "name": "menos igual"
+                }
+            },
+            "logicos": {
+                "and": {
+                    "item": "&&",
+                    "name": "E",
+                    "description": "&& retorna verdadeiro caso ambos operandos sejam verdadeiros; caso contrário, retorna falso.",
+                    "declaration": "expr1 && expr2"
+                },
+                "or": {
+                    "item": "||",
+                    "name": "ou",
+                    "description": "|| retorna verdadeiro caso ambos os operandos sejam verdadeiro ou apenas um; se ambos forem falsos, retorna falso.",
+                    "declaration": "expr1 || expr2"
+                },
+                "not": {
+                    "item": "!",
+                    "name": "não é",
+                    "description": "! Retorna falso caso a expressão seja verdadeira e vice-versa",
+                    "declaration": "!expr"
+                }
+            },
+            "unarios": {
+                "delete": {
+                    "item": "delete",
+                    "description": "O operador delete apaga um objeto, uma propriedade de um objeto ou um elemento no índice especificado de uma matriz.",
+                    "declaration": " A sintaxe é:\n\rdelete nomeObjeto;\ndelete nomeObjeto.propriedade;\ndelete nomeObjeto[indice];\ndelete propriedade; // válido apenas dentro de uma declaração with"
+                },
+                "typeOf": {
+                    "item": "typeof",
+                    "description": "O operador typeof retorna uma string indicando o tipo do operando sem avaliação. operando é uma string, variável, palavra-chave ou objeto cujo tipo deve ser retornado. Os parênteses são opcionais.",
+                    "declaration": "typeof variavelAqui\n// retorna o tipo do dado da variavel, ex: number, string, boolean, etc.."
+                },
+                "void": {
+                    "item": "void",
+                    "description": "O operador void especifica que uma expressão deve ser avaliada sem retorno de valor. expressao é uma expressão JavaScript que deve ser avaliada. Os parênteses em torno da expressão são opcionais, mas é uma boa prática utilizá-los.\nVocê pode utilizar o operador void para especificar uma expressão como um link de hipertexto. A expressão é avaliada mas não é carregada no lugar do documento atual.",
+                    "declaration": "void (expressao)"
+                }
+            }
+        },
+        "Estruturas": {
+            "varieveis": {
+                "types": {
+                    "var": {
+                        "name": "var",
+                        "description": "Declara uma variável, opcionalmente, inicializando-a com um valor.",
+                        "declaration": "Sem valor:\n\r; var nomeVariavel;\nCom valor:\n\rvar nomeVariavel2 = 'valor'"
+                    },
+                    "let": {
+                        "name": "let",
+                        "description": "Declara uma variável local de escopo do bloco, opcionalmente, inicializando-a com um valor.",
+                        "declaration": "Sem valor:\n\r; let nomeVariavel;\nCom valor:\n\rlet nomeVariavel2 = 'valor'"
+                    },
+                    "const": {
+                        "name": "const",
+                        "description": "Declara uma constante de escopo de bloco, apenas de leitura.",
+                        "declaration": "var nomeVariavel2 = 'valor'"
+                    }
+                },
+                "data": {
+                    "dataType": {
+                        "number": {
+                            "name": "number",
+                            "declaration": "var number = 123",
+                            "description": "O tipo primitivo number não pode estar entre aspas, nem simples nem duplas"
+                        },
+                        "string": {
+                            "name": "string",
+                            "declaration": "var string = '12ab!@'",
+                            "description": "Para ser considerada string ela obrigatoriamente tem que esta entre aspas, independente do dado que seja se estiver entre aspas é uma string"
+                        },
+                        "boolean": {
+                            "name": "boolean",
+                            "declaration": "var boolean = true\nvar boolean2 = false",
+                            "description": "Assim como os do tipo number, o boolean também não devem estar entre aspas"
+                        },
+                        "object": {
+                            "name": "object",
+                            "declaration": "var object = {}\nvar object2 = { item1: 123, item2: 'meu nome', item3: true }\nvar array = []\nvar array2 = [1, 0, 3, 'a', 'g', 'b']",
+                            "description": "Observe que até um array é do tipo objeto"
+                        }
+                    }
+                }
+            },
+            "Arrays": {
+                "examples": "var arrayNumero = [10, 20, 30, 40]; // esse é um array de numeros\nvar arrayString = ['a', 'b', 'c', 'd']; // esse é um array de strings\nvar arrayMisto = [11, 'e', 22, 'f']; // arrays também podem ser mistos\nvar arrayApenasDeclarado = []; // aqui eu apenas declaro um array vazio",
+                "methods": {
+                    "push": {
+                        "item": ".push()",
+                        "declaration": "array.push('g') // adiciona um elemento (informação) no final de um array"
+                    },
+                    "unshift": {
+                        "item": ".unshift()",
+                        "declaration": "array.unshift('h') // adiciona um elemento (informação) no inicio de um array"
+                    },
+                    "pop": {
+                        "item": ".pop()",
+                        "declaration": "array.pop() // remove um elemento (informação) do final do array"
+                    },
+                    "shift": {
+                        "item": ".shift()",
+                        "declaration": "array.shift() // remove um elemento (informação) do inicio do array"
+                    },
+                    "length": {
+                        "item": ".length",
+                        "declaration": "array.length // retorna a quantidade de elementos de um array"
+                    }
+                },
+                "description": "Acessando elementos\nOs array começam com o indice 0, que vai ser o primeiro elemento\n arrayString[0] // retorna o primeiro elemento 'a'\narrayString[1] // 'b'\n Digamos que você não saiba quantos elementos existem num array e vc quer pegar o ultimo, como faria isso?\nUsando o metodo .length -1\narrayString[arrayString.length - 1] // ['d']\nO que esta acontecendo?\narrayString.length retorna o tamanho, que nesse caso seria 4, mas o ultimo indice é 3, por o array começar do 0, então subtraimos arrayString.length - 1 para obtermos o ultimo indice"
+            }
+        }
+    }
+]
