@@ -4,3 +4,11 @@
     align-items: center;
     gap: 25px;
 }
+
+.list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    flex-wrap: wrap;
+}
